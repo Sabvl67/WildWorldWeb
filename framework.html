@@ -2,11 +2,13 @@
 <html>
 
 <head>
-    <title></title>
+    <title> WiWW</title>
     <link href="https://unpkg.com/nes.css@2.1.0/css/nes.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+    <link href="https://unpkg.com/98.css" rel="stylesheet" />
     <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <script src="js/script.js"></script>
     <link href="styles.css" rel="stylesheet">
 
 </head>
@@ -14,51 +16,66 @@
 <body>
     <header>
         <section class=" sectionclass nes-container with-title ">
-            <p class="title">Showing all the cuties I have met</p>
+            <!-- <p class="title">Showing all the cuties I have met</p> -->
+            <i class="nes-octocat animate"></i>
 
-            <h1>Wild Word Web</h1>
+            <h2>Cindy's Wild Word Web</h2>
             <section class="message-list nes-container">
                 <section class="message -left">
-                    <i class="nes-bcrikko"></i>
-                    <!-- Balloon -->
+                    <h1> Welcome to my page!! </h1>
+                    <!-- <i class="nes-bcrikko"></i>
                     <div class="nes-balloon from-left">
-                        <p>Welcome to my gallery</p>
+                        <p>Welcome to my journey</p>
+                    </div> -->
+                    <div class="image-container">
+                        <img src="public/britney.webp" alt="Britney 1">
+                        <img src="public/200.webp" alt="counter">
+                        <img src="public/britney.webp" alt="Britney 2">
                     </div>
                 </section>
-
             </section>
             <br>
             <br>
 
             <div class="wrapper">
-
+                <!-- item1 -->
                 <div class="item">
                     <div class="polaroid"><img src="public/thum.jpg">
                         <div class="caption">My baby - Thum</div>
+                        <a href="#" class="more-link" data-id="1">[More]</a>
+
                     </div>
                 </div>
 
+                  <!-- item2 -->
                 <div class="item">
                     <div class="polaroid"><img src="public/2 cats.JPG">
                         <div class="caption">Cheetara and Fernado</div>
+                        <a href="#" class="more-link" data-id="2">[More]</a>
                     </div>
                 </div>
 
+                  <!-- item3 -->
                 <div class="item">
                     <div class="polaroid"><img src="public/catneighbor.JPG">
                         <div class="caption">Neighbor call him "meowmeow" </div>
+                        <a href="#" class="more-link" data-id="3">[More]</a>
                     </div>
                 </div>
 
+                  <!-- item 4 -->
                 <div class="item">
                     <div class="polaroid"><img src="public/dogonthehill.png">
                         <div class="caption">This dog just chills with the hill</div>
+                        <a href="#" class="more-link" data-id="4">[More]</a>
                     </div>
                 </div>
+
 
                 <div class="item">
                     <div class="polaroid"><img src="public/farmdog.JPEG">
                         <div class="caption">Unexpected friend when visiting the potato farm</div>
+                        <a href="#" class="more-link" data-id="5">[More]</a>
                     </div>
                 </div>
 
@@ -70,7 +87,7 @@
 
                 <div class="item">
                     <div class="polaroid"><img src="public/catngoc.png">
-                        <div class="caption">We were having coffee and this little girl decides to crash in</div>
+                        <div class="caption">We were having coffee and this little girl decided to crash in</div>
                     </div>
                 </div>
 
@@ -83,20 +100,24 @@
                   <div class="item">
                     <div class="polaroid"><img src="public/lemur2.png">
                       <div class="caption">Madagascar</div>
+                      <a href="#" class="more-link" data-id="8">[More]</a>
                     </div>
                   </div>
 
                   <div class="item">
                     <div class="polaroid"><img src="public/simba.JPG">
                       <div class="caption">Simba-thegreatest</div>
+                      <a href="#" class="more-link" data-id="9">[More]</a>
                     </div>
                   </div>
 
                   <div class="item">
                     <div class="polaroid"><img src="public/robot dog.JPG">
                       <div class="caption">Met this guy at work</div>
+                      <a href="#" class="more-link" data-id="10">[More]</a>
                     </div>
                   </div>
+
 
                   <div class="item">
                     <div class="polaroid"><img src="public/dog gas.png">
@@ -104,6 +125,18 @@
                     </div>
                   </div>
 
+                  <!-- 90's window overlay -->
+                  <div class="overlay" id="overlay">
+                    <div class="window">
+                        <div class="title-bar">
+                            <div class="title-bar-text" id="overlay-title"></div>
+                            <div class="title-bar-controls">
+                                <button aria-label="Close" class="close-btn">X</button>
+                            </div>
+                        </div>
+                        <div class="window-body" id="overlay-content"></div>
+                    </div>
+                </div>
 
                   <section class="message -right">
                     <div class="nes-balloon from-right">
@@ -114,22 +147,61 @@
                 </section>
             </div>
 
+            <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                <img src="public/catglasses.gif" style="width: 300px; height: auto;">
+                <img src="public/construction (1).gif">
+                <img src="public/dogvscar.gif" style="width: 300px; height: auto;">
+            </div>
 
 
-
-
+                <div class="snowflakes" aria-hidden="true">
+                  <div class="snowflake">
+                    <div class="inner">❅</div>
+                  </div>
+                  <div class="snowflake">
+                    <div class="inner">❅</div>
+                  </div>
+                  <div class="snowflake">
+                    <div class="inner">❅</div>
+                  </div>
+                  <div class="snowflake">
+                    <div class="inner">❅</div>
+                  </div>
+                  <div class="snowflake">
+                    <div class="inner">❅</div>
+                  </div>
+                  <div class="snowflake">
+                    <div class="inner">❅</div>
+                  </div>
+                  <div class="snowflake">
+                    <div class="inner">❅</div>
+                  </div>
+                  <div class="snowflake">
+                    <div class="inner">❅</div>
+                  </div>
+                  <div class="snowflake">
+                    <div class="inner">❅</div>
+                  </div>
+                  <div class="snowflake">
+                    <div class="inner">❅</div>
+                  </div>
+                  <div class="snowflake">
+                    <div class="inner">❅</div>
+                  </div>
+                  <div class="snowflake">
+                    <div class="inner">❅</div>
+                  </div>
+                </div>
+                
 
 
             <!-- footer -->
             <section class="icon-list nes-container">
                 <!-- Copyright Nintendo -->
-                <i class="nes-mario"></i>
+                <!-- <i class="nes-mario"></i>
                 <i class="nes-ash"></i>
                 <i class="nes-pokeball"></i>
-                <i class="nes-bulbasaur"></i>
-                <i class="nes-charmander"></i>
-                <i class="nes-squirtle"></i>
-                <i class="nes-kirby"></i>
+                <i class="nes-kirby"></i> -->
             </section>
     </header>
 </body>
